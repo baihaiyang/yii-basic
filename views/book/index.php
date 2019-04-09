@@ -4,7 +4,7 @@ use yii\grid\GridView;
 use app\models\Book;
 ?>
 <h1>Books</h1>
-<a href="/index.php?r=book/add"><?= Html::Button('新增', ['class' => 'btn btn-primary', 'url' => ['/site/index']]) ?></a>
+<a href="/index.php?r=book/add"><?= Html::Button('新增', ['class' => 'btn btn-primary']) ?></a>
 <?= GridView::widget([
     'dataProvider' => $dataProvider,
     'columns' => [
